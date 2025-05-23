@@ -6,10 +6,10 @@ import { Spinner } from '../components/common/Spinner';
 import { UNIVERSITY_NAME, UNIVERSITY_SHORT_NAME, STUDENT_EMAIL_DOMAIN } from '../constants';
 
 const LoginPage: React.FC = () => {
-  const [studentId, setStudentId] = useState('');
+  const [studentId, setStudentId] = useState('1234567'); // Default value for mock login
   const [email, setEmail] = useState('');
-  const [name, setName] = useState(''); // Added for mock login
-  const [password, setPassword] = useState(''); // Password field for UI, not used in mock logic
+  const [name, setName] = useState('This is Dummy Account'); // Added for mock login
+  const [password, setPassword] = useState('pass123'); // Password field for UI, not used in mock logic
   const { login, isLoading, error } = useAuth();
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -43,7 +43,7 @@ const LoginPage: React.FC = () => {
         </div>
         
         <form onSubmit={handleSubmit} className="space-y-6">
-          <Input
+          {/* <Input
             label="Full Name"
             type="text"
             id="name"
@@ -51,8 +51,8 @@ const LoginPage: React.FC = () => {
             onChange={(e) => setName(e.target.value)}
             placeholder="Enter your full name"
             required
-          />
-          <Input
+          /> */}
+          {/* <Input
             label="Student ID"
             type="text"
             id="studentId"
@@ -60,7 +60,7 @@ const LoginPage: React.FC = () => {
             onChange={(e) => setStudentId(e.target.value)}
             placeholder="e.g., 2010XXX"
             required
-          />
+          /> */}
           <Input
             label="Student Email"
             type="email"
@@ -96,8 +96,8 @@ const LoginPage: React.FC = () => {
       <div className="w-64 h-64 bg-white rounded-lg shadow-md flex flex-col justify-center items-center mt-8">
         <h2 className="text-lg font-semibold mb-2">Dummy Login Details</h2>
         <p className="text-gray-700 text-sm text-center px-4">
-          Name: asdf<br />
-          Student ID: 1234567<br />
+          {/* Name: asdf<br /> */}
+          {/* Student ID: 1234567<br /> */}
           Email: 1234567@iub.edu.bd <br />
           Password: pass123<br />
           <span className="text-red-500">Note: This is a mock login. No real authentication is performed.</span>
