@@ -34,7 +34,7 @@ const LoginPage: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-iub-green to-green-700 p-4">
+    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-iub-green to-light-700 p-4">
       <div className="bg-white p-8 md:p-12 rounded-xl shadow-2xl w-full max-w-md transform transition-all duration-500 hover:scale-105">
         <div className="text-center mb-8">
           <img src={`https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMvpoEvhKPU44ntL_U4XFwkVgBVG0vomYRuA&s`} alt={`${UNIVERSITY_SHORT_NAME} Logo`} className="w-20 h-20 mx-auto mb-4 rounded-full object-cover" />
@@ -88,7 +88,7 @@ const LoginPage: React.FC = () => {
         </form>
         <p className="mt-6 text-center text-sm text-gray-500">
           Don't have an account? <a href="#" className="font-medium text-iub-primary hover:text-iub-primary/80">Register</a>
-          <p className="text-blue-500">Developed by @ahmedmshakil</p>
+          <p className="text-blue-500">Developed by <a href="https://shakilahmed.live/" target="_blank" rel="noopener noreferrer" className="underline hover:text-blue-700">@ahmedmshakil</a></p>
         </p>
       </div> {/* This is the end of your login form box */}
 
