@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { useAuth } from '../contexts/AuthContext';
 import { Button } from '../components/common/Button';
@@ -38,8 +37,8 @@ const LoginPage: React.FC = () => {
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-iub-green to-green-700 p-4">
       <div className="bg-white p-8 md:p-12 rounded-xl shadow-2xl w-full max-w-md transform transition-all duration-500 hover:scale-105">
         <div className="text-center mb-8">
-          <img src={`https://picsum.photos/seed/${UNIVERSITY_SHORT_NAME}/100/100`} alt={`${UNIVERSITY_SHORT_NAME} Logo`} className="w-20 h-20 mx-auto mb-4 rounded-full object-cover" />
-          <h1 className="text-3xl font-bold text-iub-primary">{UNIVERSITY_SHORT_NAME} Community</h1>
+          <img src={`https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMvpoEvhKPU44ntL_U4XFwkVgBVG0vomYRuA&s`} alt={`${UNIVERSITY_SHORT_NAME} Logo`} className="w-20 h-20 mx-auto mb-4 rounded-full object-cover" />
+          <h1 className="text-3xl font-bold text-iub-primary">{UNIVERSITY_SHORT_NAME} Student Community</h1>
           <p className="text-gray-600 mt-1">{UNIVERSITY_NAME}</p>
         </div>
         
@@ -88,7 +87,20 @@ const LoginPage: React.FC = () => {
           </Button>
         </form>
         <p className="mt-6 text-center text-sm text-gray-500">
-          Don't have an account? <a href="#" className="font-medium text-iub-primary hover:text-iub-primary/80">Contact Admin</a>
+          Don't have an account? <a href="#" className="font-medium text-iub-primary hover:text-iub-primary/80">Register</a>
+          <p className="text-blue-500">Developed by @ahmedmshakil</p>
+        </p>
+      </div> {/* This is the end of your login form box */}
+
+      {/* Project Info Box */}
+      <div className="w-64 h-64 bg-white rounded-lg shadow-md flex flex-col justify-center items-center mt-8">
+        <h2 className="text-lg font-semibold mb-2">Dummy Login Details</h2>
+        <p className="text-gray-700 text-sm text-center px-4">
+          Name: asdf<br />
+          Student ID: 1234567<br />
+          Email: 1234567@iub.edu.bd <br />
+          Password: pass123<br />
+          <span className="text-red-500">Note: This is a mock login. No real authentication is performed.</span>
         </p>
       </div>
     </div>
