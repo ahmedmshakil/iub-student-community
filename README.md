@@ -14,3 +14,6 @@
 <br>
 3. Run the app:
    `npm run dev`
+
+   # Author
+   Shakil Ahmed
